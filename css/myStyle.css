@@ -1,0 +1,121 @@
+@charset "utf-8";
+.bodys {
+	height: 100%;
+}
+
+.my-headers {
+	position: fixed;
+	height: 80px;
+	left: 230px;
+	right: 0;
+	top: 0;
+	background: #00c6d7;
+	z-index: 1;
+	box-shadow: 0 0 12px #369;
+}
+
+.my-sidebarmenu {
+	width: 230px;
+	position: fixed;
+	left: 0;
+	top: 0;
+	bottom: 0px;
+	background: #052963;
+	z-index: 1;
+}
+
+.my-maincontent {
+	position: fixed;
+	left: 230px;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	background: #f1f1f1;
+	overflow-y: auto;
+	z-index: 1;
+	padding: 100px 20px 20px 20px;
+}
+
+.menus {
+	padding: 20px 0;
+}
+
+.menus ul,
+.menus li {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+.menus li {
+	font: 500 14px/40px "微软雅黑";
+	color: #fff;
+	text-decoration: none;
+}
+
+.menus li a {
+	color: #FDFDFE;
+	display: block;
+	text-decoration: inherit;
+	padding: 0 30px;
+	cursor: pointer;
+}
+
+.menus li.active {
+	background: #369;
+}
+
+.menus li.level-2 a {
+	padding-left: 40px;
+	font: 500 12px/35px "微软雅黑";
+}
+
+.menus li.level-2 a:hover {
+	padding-left: 40px;
+	font: 500 12px/33px "微软雅黑";
+}
+
+.menus li.level-3 a {
+	padding-left: 60px;
+	font: 500 12px/35px "微软雅黑";
+}
+
+.menus li.level-3 a:hover {
+	padding-left: 60px;
+	font: 500 12px/33px "微软雅黑";
+}
+
+.menus li.level-4 a {
+	padding-left: 80px;
+	font: 500 12px/35px "微软雅黑";
+}
+
+.menus li.level-4 a:hover {
+	padding-left: 80px;
+	font: 500 12px/33px "微软雅黑";
+}
+
+.menus li a .fa {
+	width: 30px;
+}
+
+.menus li a:hover {
+	color: #ffffff;
+	background-color: #002561;
+	border-bottom: solid 1px #369;
+	border-top: solid 1px #369;
+	line-height: 38px;
+	font-weight: bold;
+	color: #fff;
+}
+
+.menus .logo {
+	text-align: center;
+	color: #fff;
+	cursor: pointer;
+	background: #369;
+	margin-top: -20px;
+	padding-top: 12px;
+	height: 80px;
+	margin-bottom: 10px;
+}

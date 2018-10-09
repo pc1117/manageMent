@@ -1,0 +1,19 @@
+<div class="menus">
+	<div class="logo" title="四川智造人才网" ui-sref="app.home">
+		<h4>四川智造人才网</h4>
+		<p>www.sczzrcw.com</p>
+	</div>
+	<tree-data data="submenus"></tree-data>
+	<!--<ul>
+		<li ng-repeat="x in Submenus" ng-include="'itemTemplate.html'">
+		</li>
+	</ul>-->
+</div>
+
+<script type="text/ng-template" id="itemTemplate.html">
+	<a ui-sref="{{x.Url}}" ng-click="toggleItem(x,$event)"><i class="{{x.Icon||'fa fa-star'}}"></i>{{x.Name}}</a>
+	<ul ng-if="x.Toggle" ng-class="{'active':x.Toggle}">
+		<li ng-repeat="x in x.Submenus" ng-include="'itemTemplate.html'" class="level-{{x.Level}}" ng-class="{'active':x.Toggle}">
+		</li>
+	</ul>
+</script>
